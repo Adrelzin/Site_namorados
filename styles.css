@@ -4,8 +4,21 @@
     100% { transform: scale(1); }
 }
 
+@keyframes subirFundo {
+    0% { 
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .coração {
     display: inline-block;
+    position: relative;
+    z-index: 10;
 }
 
 .coração img {
@@ -38,9 +51,8 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.5s ease;
+    overflow: hidden;
+    position: relative;
 }
 
 #meubotao {
@@ -64,6 +76,8 @@ body {
     opacity: 0;
     transform: scale(0.8);
     transition: all 0.5s ease;
+    position: relative;
+    z-index: 5;
 }
 
 #mensagem.visible {
@@ -81,4 +95,25 @@ body {
     color: #555;
     font-size: 18px;
     line-height: 1.6;
+}
+
+#fundo-animado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.fundo-escondido {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.fundo-visivel {
+    animation: subirFundo 0.8s ease-out forwards;
 }
