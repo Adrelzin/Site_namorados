@@ -1,0 +1,83 @@
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.coração {
+    display: inline-block;
+}
+
+.coração img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    animation: pulsar 2s infinite;
+    transition: transform 0.3s;
+}
+
+.coração:hover img {
+    transform: scale(1.15);
+    animation: pulsar 2s infinite;
+    animation-delay: 0s !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+#meubotao {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+#mensagem {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
+
+#mensagem.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#mensagem h1 {
+    color: #ff6b6b;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#mensagem p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
