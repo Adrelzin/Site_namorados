@@ -6,21 +6,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="meubotao" class="coração">
-        <img src="coração.jpg" alt="Coração">
-    </button>
-    
-    <div id="mensagem" class="hidden">
-        <h1>Para a garota mais linda do mundo!</h1>
-        <p>Olá, querida garota! ❤️</p>
-        <p>Nesse dia especial gostaria de comemorar com você, rsrs</p>
-        <p>Espero que esta pequena surpresa te faça sorrir!😊</p>
-        <p>Eu te amoooooooooooooooooooooooooooooo!❤️❤️❤️</p>
-        <p>Vou fazer outra coisa, amanhã, rsrs.</p>
-    </div>
+    <main>
+        <button id="botao-inicial" class="botao-coracao" aria-label="Clique no coração para começar">
+            <img src="coração.jpg" alt="Coração" class="imagem-coracao">
+        </button>
+        
+        <section id="mensagem-principal" class="mensagem hidden" role="dialog" aria-labelledby="titulo-mensagem">
+            <h1 id="titulo-mensagem">Para a garota mais linda do mundo!</h1>
+            <p>Olá, querida! ❤️</p>
+            <p>Espero que esta pequena surpresa te faça sorrir! 😊</p>
+            <p>Eu te amoooooooooooooooooooooooooooo! ❤️❤️❤️</p>
+            <button class="botao-avancar" id="botao-avancar-1">Avançar</button>
+        </section>
 
-    <div id="fundo-animado" class="fundo-escondido"></div>
+        <div id="fundo-animado" aria-hidden="true"></div>
 
-    <script src="script.js"></script>
+        <section id="circulo-container" class="circulo-container" role="dialog" aria-label="Seções do nosso amor">
+            <div class="circulo-dividido">
+                <article class="secao-circulo secao-vermelha">
+                    <div class="conteudo-secao">
+                        <img src="HTML5 e CSS3/Site_namorados/momento1.jpg" alt="Nossos momentos especiais" class="imagem-secao" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-imagem" style="display: none;">
+                            <img src="nos.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="secao-circulo secao-verde">
+                    <div class="conteudo-secao">
+                        <img src="HTML5 e CSS3/Site_namorados/amor.jpg" alt="Nosso amor crescendo" class="imagem-secao"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-imagem" style="display: none;">
+                            <img src="MinhaTefa.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="secao-circulo secao-azul">
+                    <div class="conteudo-secao">
+                        <span class="texto-voce" aria-hidden="true">VOCÊ</span>
+                        <span class="texto-e" aria-hidden="true">É</span>
+                        <span class="texto-meu" aria-hidden="true">MEU</span>
+                    </div>
+                </article>
+            </div>
+            <div class="imagem-inferior">
+                <img src="Mundo.png" alt="Mundo" class="imagem-mundo">
+            </div>
+        </section>
+    </main>
+    <script src = "script.js"></script>
 </body>
 </html>
