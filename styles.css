@@ -88,6 +88,9 @@
         }
 
         @media (max-width : 768px){
+            body{
+                background-color: #000;
+            }
             .botao-coracao{
                 width: 20px;
                 height: 20px;
