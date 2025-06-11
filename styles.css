@@ -48,7 +48,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
             position: relative;
-            background: #ffffff;
+            background: #fff;
             transition: all 0.5s ease;
         }
 
@@ -85,16 +85,6 @@
             transition: all 0.3s ease;
             position: relative;
             z-index: 10;
-        }
-
-        @media (max-width : 768px){
-            body{
-                background-color: #000;
-            }
-            .botao-coracao{
-                width: 20px;
-                height: 20px;
-            }
         }
 
         .botao-coracao:hover {
