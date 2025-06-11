@@ -48,7 +48,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
             position: relative;
-            background: #fff;
+            background: #ffffff;
             transition: all 0.5s ease;
         }
 
@@ -68,6 +68,13 @@
             background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
         }
 
+        @media (max-width:768){
+            section{
+                width: auto;
+                height: auto;
+            }
+        }
+
         .hidden {
             display: none;
         }
@@ -85,6 +92,16 @@
             transition: all 0.3s ease;
             position: relative;
             z-index: 10;
+        }
+
+        @media (max-width : 768px){
+            body{
+                background-color: #000;
+            }
+            .botao-coracao{
+                width: 20px;
+                height: 20px;
+            }
         }
 
         .botao-coracao:hover {
