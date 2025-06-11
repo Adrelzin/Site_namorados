@@ -75,6 +75,10 @@
                 padding: 40px 20px; /* Mais padding */
                 font-size: 1.2em; /* Texto maior */
             }
+            .imagem-mundo{
+                height: fit-content;
+                width: fit-content;
+            }
         }
 
         .hidden {
