@@ -68,10 +68,12 @@
             background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
         }
 
-        @media (max-width:768){
-            section{
-                width: auto;
-                height: auto;
+        @media (max-width: 768px) {
+            section {
+                width: 100%;
+                min-height: 100vh; /* Ocupa a altura total da tela */
+                padding: 40px 20px; /* Mais padding */
+                font-size: 1.2em; /* Texto maior */
             }
         }
 
