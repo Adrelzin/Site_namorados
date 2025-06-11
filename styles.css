@@ -79,6 +79,9 @@
                 height: fit-content;
                 width: fit-content;
             }
+            .texto-e{
+                color: transparent;
+            }
         }
 
         .hidden {
