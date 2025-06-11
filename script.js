@@ -1,4 +1,4 @@
-  const botaoInicial = document.getElementById('botao-inicial');
+const botaoInicial = document.getElementById('botao-inicial');
         const mensagemPrincipal = document.getElementById('mensagem-principal');
         const fundoAnimado = document.getElementById('fundo-animado');
         const circuloContainer = document.getElementById('circulo-container');
